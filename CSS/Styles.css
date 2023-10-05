@@ -3,7 +3,10 @@
 }
 .container {
     background: #F2F9FF;
-    margin 0 auto;
+    margin: 0 auto;
+    /*background: url("IMG/Rectangle\ 1.png");
+    background-position: 50% 100%;
+    background-size: 63% 100%;*/
 }
 a {
     text-decoration: none;
