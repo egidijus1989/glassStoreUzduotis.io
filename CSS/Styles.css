@@ -70,15 +70,16 @@ nav li a {
 main {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    padding: 0 0 0 30px;
 }
 .contentUL {
     flex-grow: 1;
 }
 .contentUL img {
-    width: 489px;
-    height: 579px;
     flex-shrink: 0;
     border-radius: 15px 50px 50px 50px;
+    padding: 40px;
 }
 .contentUR {
     flex-grow: 2;
@@ -111,29 +112,33 @@ main {
 .contentURphotos {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
-.contentURphotos img {
-    width: 118px;
-    height: 66px;
-    flex-shrink: 0;
-    border-radius: 15px;
+.photoContainer {
     width: 159px;
-    height: 93px;
-    flex-shrink: 0;
-    background: #FFF;
-    border-radius: 15px;
-    background: #FFF;
-    box-shadow: 10px 10px 30px 0px rgba(67, 199, 255, 0.30); 
-}
-.contentURphotosFirst {
-    display: flex;
-    flex-direction: row;
-    width: 363px;
     height: 93px;
     flex-shrink: 0;
     border-radius: 15px;
     background: #FFF;
     box-shadow: 10px 10px 30px 0px rgba(67, 199, 255, 0.30);
+    padding: 15px 20px;
+}
+.contentURphotos img {
+    width: 116px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.10); 
+}
+.contentURphotosFirst {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 10px 10px 30px 0px rgba(67, 199, 255, 0.30);
+    padding: 15px 20px;
 }
 .contentURphotosFirst a {
     width: 42px;
@@ -143,7 +148,8 @@ main {
 .contentURphotosFirstText {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 .contentURphotosFirstText h5 {
     color: #000;
@@ -151,7 +157,9 @@ main {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;  
+    line-height: normal;
+    margin: 0;
+    padding: 0;
 }
 .contentURphotosFirstText p {
     color: #000;
@@ -159,7 +167,9 @@ main {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
+    margin: 0;
+    padding: 0;
 }
 
 /*Footer*/
@@ -167,6 +177,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 100px 0 0 0;
 }
 .footerL li {
     display: inline;
